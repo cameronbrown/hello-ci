@@ -6,10 +6,16 @@ python:
   - "3.3"
 
 # command to install dependencies
-install: make init
+install:
+    - make init
 
 # command to run tests
-script: make test
+script:
+    - make test
+
+# run codecov
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
 
 branches:
   only:
