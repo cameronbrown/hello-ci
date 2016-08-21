@@ -1,22 +1,29 @@
 language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
+- '2.6'
+- '2.7'
+- '3.2'
+- '3.3'
 
 # command to install dependencies
 install:
-    - make init
+- make init
 
 # command to run tests
 script:
-    - make test
+- make test
 
 # run codecov
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
 
 branches:
   only:
-    - master
+  - master
+
+notifications:
+  email:
+    - cameronjbrown@gmail.com
+  slack:
+    secure: MWdDagj80RgXjcTMZL3eqdmrd1RFtv5KeRdN2XJowL+rXab57Jkgz/8aoo1VmusnuzksoGG4dKkbf0fFo43P5yv1aAiP1rMimxswhL0hU6hA5b7n7CmxyEzy/L8jVBkcOUaTbUCcdxMCbDGvhaWKYsiONJPCXxtugvF/NcqvSLZdAgM5onJLk802iFU4yu73A0Qk+GmLVBEK5liWqY2q0Qk04pwNfs/K9UiKbbPWgd8QqRipLeq1qIi/bOoyTnE+3hQZyXbkUiY41njmG3Kx28s8fTFwirnY45Pae7sFZoO0+g3LN2WZiTfZI7Z9l5MJYdjiybPhg6hsVb/cwd17fF7+xLMCrU7NkV7fAF2XvNdDXxlsEKAndJg072+fLrj9AucxUlaZXqkyZUyw2c+EWmSDw0vZ/iDucnB4UWAvKfbLfFV4NWBz1fGEo1MHG02GqXhTSJEvqOwmBifjdxyCqWIMpAFMiFw6f6CphFkBZFWMRjKtaqwYkVsTEDqe4j7Fps0Qd1QtQxmcc2rWm8r33FbjJ85AdxK8t7yySBMNhherxHAfNWvNEaEnU2KnnMdDYpqf0OLyfSHyXwGBAyVYfEPEJ8/g+4kKtaPvxPVy0bS9eH8PGdU4KpdAYT7Ww3q+SzisYnV7MpgdNBzX/xtHMVQ/FBsuCMjg8dHuAWZ38K4=
+
