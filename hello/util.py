@@ -9,3 +9,8 @@ def add_two(num):
 def add_three(num):
     """Add three to num"""
     return num + 3
+
+
+def add_four(num):
+    """Add four to num"""
+    return num + 4
