@@ -11,8 +11,7 @@ coverage:
     slack:
       default:
         url: https://hooks.slack.com/services/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
-        threshold: null
-        branches: null
+        threshold: 1%
         attachments: "sunburst, diff"
 
 #   hipchat:

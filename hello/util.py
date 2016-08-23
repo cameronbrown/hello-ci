@@ -14,3 +14,13 @@ def add_three(num):
 def add_four(num):
     """Add four to num"""
     return num + 4
+
+
+def add_five(num):
+    """Add five to num"""
+    num += 1
+    num += 1
+    num += 1
+    num += 1
+    num += 1
+    return num
